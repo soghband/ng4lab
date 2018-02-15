@@ -1,0 +1,7 @@
+<div>
+  {{ test_lab }}
+</div>
+<div *ngFor = "let i of name">
+  <div>name : {{i.name}}</div>
+  <app-lab-name [child]="i.child"></app-lab-name>
+</div>
